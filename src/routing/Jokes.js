@@ -4,7 +4,9 @@ import Navbar from './Navbar'
 export default function  Jokes() {
 
     return(
-        'silly'
+        <>
+            <Navbar />
+        </>
     )
     
 }

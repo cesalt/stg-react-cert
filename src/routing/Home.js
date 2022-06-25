@@ -1,10 +1,12 @@
 import React from 'react'
 import Navbar from './Navbar'
 
-export default function  Homme() {
+export default function  Home() {
 
     return(
-        'silly'
+        <>
+            <Navbar />
+        </>
     )
     
 }
