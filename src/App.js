@@ -1,3 +1,4 @@
+import {useState} from 'react'
 import logo from './logo.svg';
 import './App.css';
 import Categories from './routing/Categories'
@@ -7,13 +8,15 @@ import Search from './routing/Search'
 import { Routes, Route, Link } from 'react-router-dom';
 
 function App() {
+
+
   return (
     <>
     <Routes>
-      <Route path='/' element={<Home />} />
+      <Route  path='/' element={<Home />} />
       <Route path='/jokes' element={<Jokes />} />
       <Route path='/search' element={<Search />} />
-      <Route path='/categories' element={<Categories />} />
+      <Route disabled={true} path='/categories' element={<Categories />} />
     </Routes>
     
     
